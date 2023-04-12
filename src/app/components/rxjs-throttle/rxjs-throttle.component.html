@@ -1,0 +1,14 @@
+<h1>RXJS: throttleTime()</h1>
+
+<pre class="mt-4 fs-3">
+    const source = from(times)
+      .pipe(
+        mergeMap(
+          item => of(item.value).pipe(delay(item.time))),
+        throttleTime(200)
+      );
+</pre>
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
+  <div class="fs-1" *ngFor="let msg of messages">{{msg}}</div>
+</div>

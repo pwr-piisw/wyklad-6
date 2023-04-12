@@ -1,0 +1,24 @@
+<h1>RXJS: merge()</h1>
+
+<pre class="mt-4 fs-5">
+  const source2 = timer(300, 2000)
+      .pipe(
+        take(10),
+        map(i => 'item ' + i)
+      );
+    const source1 = timer(1000, 550)
+      .pipe(
+        take(10),
+        timeInterval&lt;number&gt;(),
+        map(t => t.interval),
+        map(t => 'item ' + t)
+      );
+    merge(source1, source2).subscribe(x => this.elements.push(x));
+</pre>
+
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
+  <div class="fs-2">
+    <div *ngFor="let num of elements">{{ num }}</div>
+  </div>
+</div>

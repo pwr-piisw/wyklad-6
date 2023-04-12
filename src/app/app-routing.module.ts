@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {RxjsOfComponent} from "./components/rxjs-of/rxjs-of.component";
 import {RxjsTimerComponent} from "./components/rxjs-timer/rxjs-timer.component";
+import {RxjsMergeComponent} from "./components/rxjs-merge/rxjs-merge.component";
+import {RxjsThrottleComponent} from "./components/rxjs-throttle/rxjs-throttle.component";
+import {RxjsSubscribeComponent} from "./components/rxjs-subscribe/rxjs-subscribe.component";
+import {RxjsDoubleClickComponent} from "./components/rxjs-double-click/rxjs-double-click.component";
 
 const routes: Routes = [{
   path: 'rxjs-of',
@@ -9,6 +13,18 @@ const routes: Routes = [{
 }, {
   path: 'rxjs-timer',
   component: RxjsTimerComponent
+}, {
+  path: 'rxjs-merge',
+  component: RxjsMergeComponent
+}, {
+  path: 'rxjs-throttle',
+  component: RxjsThrottleComponent
+}, {
+  path: 'rxjs-subscribe',
+  component: RxjsSubscribeComponent
+}, {
+  path: 'rxjs-double-click',
+  component: RxjsDoubleClickComponent
 }];
 
 @NgModule({

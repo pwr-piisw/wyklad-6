@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { RxjsOfComponent } from './components/rxjs-of/rxjs-of.component';
 import { RxjsTimerComponent } from './components/rxjs-timer/rxjs-timer.component';
 import {RouterModule} from "@angular/router";
+import { RxjsSubscribeComponent } from './components/rxjs-subscribe/rxjs-subscribe.component';
+import { RxjsMergeComponent } from './components/rxjs-merge/rxjs-merge.component';
+import { RxjsThrottleComponent } from './components/rxjs-throttle/rxjs-throttle.component';
+import { RxjsDoubleClickComponent } from './components/rxjs-double-click/rxjs-double-click.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RxjsOfComponent,
-    RxjsTimerComponent
+    RxjsTimerComponent,
+    RxjsSubscribeComponent,
+    RxjsMergeComponent,
+    RxjsThrottleComponent,
+    RxjsDoubleClickComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,20 @@
+<h1>RXJS: subscribe</h1>
+
+<pre class="mt-4 fs-4">
+  timer(200, 100).pipe(
+      timeInterval(),
+      take(3)
+    )
+      .subscribe(
+        v => this.msgs.push("" + v),
+        e => this.msgs.push(e),
+        () => this.msgs.push('completed')
+      );
+</pre>
+
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
+  <div class="fs-3">
+    <div *ngFor="let msg of msgs">{{ msg }}</div>
+  </div>
+</div>

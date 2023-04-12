@@ -1,0 +1,13 @@
+<h1>RXJS: unsubscribe()</h1>
+
+<pre class="mt-4 fs-3">
+  ngOnDestroy(): void
+    this.subscription?.unsubscribe();
+    console.log("Unsubscribed!");
+</pre>
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
+  <div class="fs-1">
+    <div *ngFor="let msg of messages">{{ msg }}</div>
+  </div>
+</div>

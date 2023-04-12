@@ -10,6 +10,8 @@ import { RxjsSubscribeComponent } from './components/rxjs-subscribe/rxjs-subscri
 import { RxjsMergeComponent } from './components/rxjs-merge/rxjs-merge.component';
 import { RxjsThrottleComponent } from './components/rxjs-throttle/rxjs-throttle.component';
 import { RxjsDoubleClickComponent } from './components/rxjs-double-click/rxjs-double-click.component';
+import { RxjsUnsubscribeComponent } from './components/rxjs-unsubscribe/rxjs-unsubscribe.component';
+import { RxjsUnsubscribeTakeUntilComponent } from './components/rxjs-unsubscribe-take-until/rxjs-unsubscribe-take-until.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { RxjsDoubleClickComponent } from './components/rxjs-double-click/rxjs-do
     RxjsSubscribeComponent,
     RxjsMergeComponent,
     RxjsThrottleComponent,
-    RxjsDoubleClickComponent
+    RxjsDoubleClickComponent,
+    RxjsUnsubscribeComponent,
+    RxjsUnsubscribeTakeUntilComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,10 @@
-<div>
-  <button (click)="clicked()">Click me</button>
+<h1>RXJS: timer()</h1>
+
+<code class="mt-4">
+  timer(2000, 1200).subscribe(x => this.elements.push(x));
+</code>
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
   <div>
     <span *ngFor="let num of elements">{{ num }},</span>
   </div>

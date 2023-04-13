@@ -7,6 +7,9 @@ import {RxjsThrottleComponent} from "./components/rxjs-throttle/rxjs-throttle.co
 import {RxjsSubscribeComponent} from "./components/rxjs-subscribe/rxjs-subscribe.component";
 import {RxjsDoubleClickComponent} from "./components/rxjs-double-click/rxjs-double-click.component";
 import {RxjsUnsubscribeComponent} from "./components/rxjs-unsubscribe/rxjs-unsubscribe.component";
+import {
+  RxjsUnsubscribeTakeUntilComponent
+} from "./components/rxjs-unsubscribe-take-until/rxjs-unsubscribe-take-until.component";
 
 const routes: Routes = [{
   path: 'rxjs-of',
@@ -29,6 +32,9 @@ const routes: Routes = [{
 }, {
   path: 'rxjs-unsubscribe',
   component: RxjsUnsubscribeComponent
+}, {
+  path: 'rxjs-take-until',
+  component: RxjsUnsubscribeTakeUntilComponent
 }];
 
 @NgModule({

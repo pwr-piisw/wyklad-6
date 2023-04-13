@@ -1,7 +1,9 @@
 <h1>RXJS: takeUntil() - unsubscribe</h1>
 
 <pre class="mt-4 fs-3">
-  timer(2000, 1200).subscribe(x => this.elements.push(x));
+  of(1, 2, 3, 4, 5)
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe(v => this.messages.push("" + v));
 </pre>
 <div class="mt-2">
   <button (click)="clicked()" class="btn btn-primary">Click me</button>

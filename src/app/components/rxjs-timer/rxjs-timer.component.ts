@@ -10,6 +10,7 @@ export class RxjsTimerComponent {
 
   elements: number[] = [];
   clicked() {
-    timer(2000, 1200).subscribe(x => this.elements.push(x));
+    timer(2000, 1200)
+      .subscribe(x => this.elements.push(x));
   }
 }

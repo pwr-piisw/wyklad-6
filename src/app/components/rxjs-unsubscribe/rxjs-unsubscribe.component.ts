@@ -12,7 +12,8 @@ export class RxjsUnsubscribeComponent implements OnDestroy {
   subscription?: Subscription;
 
   clicked(): void {
-    this.subscription = of(1,2,3,4,5).subscribe(v => this.messages.push(`${v}`));
+    this.subscription = of(1,2,3,4,5)
+      .subscribe(v => this.messages.push(`${v}`));
   }
 
   ngOnDestroy(): void {

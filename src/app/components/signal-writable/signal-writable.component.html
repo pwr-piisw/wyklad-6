@@ -1,0 +1,18 @@
+<h1>Signal - writable</h1>
+
+<pre>
+  const counter = signal(0);
+
+  clicked() &#123;
+    this.counter.update((prev) => prev + 1);
+  }
+
+</pre>
+
+<div class="mt-2">
+  <button (click)="clicked()" class="btn btn-primary">Click me</button>
+
+  <div class="fs-1">
+    Counter value: {{ counter() }}
+  </div>
+</div>

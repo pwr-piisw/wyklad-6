@@ -1,0 +1,16 @@
+<h1>Signal - select example</h1>
+
+<pre>
+
+</pre>
+
+<div class="mt-2">
+  <div class="mt-2">
+    <select class="form-select form-select-lg mb-3" aria-label="Select example" [(ngModel)]="selectedItem">
+      <option *ngFor="let item of items" [value]="item">{{ item }}</option>
+    </select>
+  </div>
+  <div class="fs-1">
+    <p>Selected item: {{ selectedItem }}</p>
+  </div>
+</div>

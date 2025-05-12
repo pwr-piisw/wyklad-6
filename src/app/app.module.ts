@@ -12,6 +12,10 @@ import { RxjsThrottleComponent } from './components/rxjs-throttle/rxjs-throttle.
 import { RxjsDoubleClickComponent } from './components/rxjs-double-click/rxjs-double-click.component';
 import { RxjsUnsubscribeComponent } from './components/rxjs-unsubscribe/rxjs-unsubscribe.component';
 import { RxjsUnsubscribeTakeUntilComponent } from './components/rxjs-unsubscribe-take-until/rxjs-unsubscribe-take-until.component';
+import { SignalWritableComponent } from './components/signal-writable/signal-writable.component';
+import { SignalComputedComponent } from './components/signal-computed/signal-computed.component';
+import { SignalSelectExampleComponent } from './components/signal-select-example/signal-select-example.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,12 +27,16 @@ import { RxjsUnsubscribeTakeUntilComponent } from './components/rxjs-unsubscribe
     RxjsThrottleComponent,
     RxjsDoubleClickComponent,
     RxjsUnsubscribeComponent,
-    RxjsUnsubscribeTakeUntilComponent
+    RxjsUnsubscribeTakeUntilComponent,
+    SignalWritableComponent,
+    SignalComputedComponent,
+    SignalSelectExampleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

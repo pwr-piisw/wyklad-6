@@ -10,6 +10,9 @@ import {RxjsUnsubscribeComponent} from "./components/rxjs-unsubscribe/rxjs-unsub
 import {
   RxjsUnsubscribeTakeUntilComponent
 } from "./components/rxjs-unsubscribe-take-until/rxjs-unsubscribe-take-until.component";
+import {SignalWritableComponent} from "./components/signal-writable/signal-writable.component";
+import {SignalComputedComponent} from "./components/signal-computed/signal-computed.component";
+import {SignalSelectExampleComponent} from "./components/signal-select-example/signal-select-example.component";
 
 const routes: Routes = [{
   path: 'rxjs-of',
@@ -35,10 +38,22 @@ const routes: Routes = [{
 }, {
   path: 'rxjs-take-until',
   component: RxjsUnsubscribeTakeUntilComponent
-}];
+}, {
+  path: 'signal-writable',
+  component: SignalWritableComponent
+}, {
+  path: 'signal-computed',
+  component: SignalComputedComponent
+}, {
+  path: 'signal-select-example',
+  component: SignalSelectExampleComponent
+},
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

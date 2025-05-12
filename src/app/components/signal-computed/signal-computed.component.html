@@ -1,0 +1,26 @@
+<p>signal-computed works!</p>
+
+<pre>
+  counterA = signal(0);
+  counterB = signal(0);
+  counterC = computed(() => this.counterA() + 2*this.counterB());
+
+  clickedA() &#123;
+    this.counterA.update((prev) => prev + 1);
+  }
+  clickedB() &#123;
+    this.counterB.update((prev) => prev + 10);
+  }
+</pre>
+
+<div class="mt-2">
+  <div class="d-flex gap-2">
+    <button (click)="incrementA()" class="btn btn-primary">Click me A</button>
+    <button (click)="incrementB()" class="btn btn-primary">Click me B</button>
+  </div>
+  <div class="fs-1">
+    <p>Counter A value: {{ counterA() }}</p>
+    <p>Counter B value: {{ counterB() }}</p>
+    <p>Counter C value: {{ counterC() }}</p>
+  </div>
+</div>

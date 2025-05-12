@@ -1,7 +1,18 @@
 <h1>Signal - select example</h1>
 
 <pre>
+  items = ["apples", "bananas", "oranges"];
 
+  private _selectedItem = signal&lt;string>(this.items[0]);
+
+  get selectedItem() &#123;
+    return this._selectedItem();
+  }
+  set selectedItem(value: string) &#123;
+    this._selectedItem.set(value);
+  }
+
+  selection = computed&lt;string>(() => `Selected $&#123;this._selectedItem()}`);
 </pre>
 
 <div class="mt-2">

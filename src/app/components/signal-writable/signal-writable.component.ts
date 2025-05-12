@@ -12,4 +12,8 @@ export class SignalWritableComponent {
   clicked() {
     this.counter.update((prev) => prev + 1);
   }
+
+  reset() {
+    this.counter.set(0);
+  }
 }
